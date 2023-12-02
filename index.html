@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Delicious Recipes</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo&family=Dancing+Script:wght@500&family=Great+Vibes&family=Libre+Baskerville&family=Nunito+Sans:wght@200&family=Oswald:wght@300&family=Playfair+Display:ital@1&family=Poppins:wght@300&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;1,8..144,100&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/x-icon" href="logo.ico">
+<link rel="stylesheet" type="text/css" href="Homepage.css">
+
+</head>
+
+<body>
+<!--header-->
+<header>
+  <h1>Welcome to Good Taste <img src="logo.ico" width="90" height="100"></h1>
+</header>
+
+<!--nav-->
+  <div class="nav">
+    <ul>
+      <li><a href="index.html">Home Page</a></li>
+      <li><a href="RecipeCatalog.html" target="_blank">Recipe Catalog</a></li>
+      <li><a href="IndividualRecipe.html" target="_blank">Individual Recipe</a></li>
+      <li><a href="ContactUs.html" target="_blank">Contact Us</a></li>
+    </ul>
+  </div>
+  
+<!--intro-->
+    <h4>Welcome to a world of flavor!<br>
+    Explore a variety of mouth-watering dishes from different cuisines.</h4>
+	
+<!--photo-->
+<div class="image1">
+    <img src="photo1.jpg" alt="Image">
+</div>
+
+<!--vision-mission-->	
+<section id="vision-mission">
+    <div class="vision">
+        <h2>Vision</h2>
+			<p>Building a place where the happiness of tasty food unites people, improving lives with pleasant tastes, 
+			and encouraging a worldwide group enthusiastic about cooking adventures.</p>
+	</div>
+	<div class="mission">
+		<h2>Mission</h2>
+			<p>Here at Good Taste, we're dedicated to sparking joy in food lovers! We do this by offering 
+			a wide variety of top-notch recipes and fun food facts. 
+			We believe in the fun of cooking, responsible sourcing, and creating a world where everyone can savor 
+			tasty and healthy meals.</p>
+    </div>
+</section>  
+
+<!-- Image slider -->
+<div class="container" style="margin-top: 40px">
+    <div class="slider">
+        <div class="box1">
+            <img src="food1.jpg">
+        </div>
+        <div class="box2">
+            <img src="food2.jpg">
+	    </div>
+        <div class="box3">
+            <img src="food3.jpg">
+        </div>
+        <div class="box4">
+            <img src="food4.jpg">
+        </div>
+        <div class="box5">
+            <img src="food5.jpg">
+        </div>
+        <div class="box6">
+            <img src="food6.jpg">
+		</div>
+        <div class="box7">
+            <img src="food7.jpg">
+        </div>
+    </div>
+</div>
+
+	
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function rotate() {
+            var lastChild = $('.slider div:last-child').clone();
+            $('.slider div').removeClass('firstSlide');
+            $('.slider div:last-child').remove();
+            $('.slider').prepend(lastChild);
+            $(lastChild).addClass('firstSlide');
+        }
+
+        setInterval(function() {
+            rotate();
+        }, 4000);
+    </script>
+	
+<!--footer--> 
+	<div class="footer" style="margin-top:40px">
+		<p>Good Taste<br><img src="logo.ico" width="50px" height="50px"><br>
+		No 20 Main Street,<br> 
+		Colombo 04, Sri Lanka<br>
+		info@goodtaste.com<br>
+		+94771234567
+		<br>
+		&copy; 2023 Good Taste. All rights reserved.</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+/*Navigation Menu*/
+	
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	background-color:#22668D;
+	color:white;
+	font-family: 'Roboto Serif', serif;
+	margin-bottom:20px;
+}
+	
+li {
+	float:left;
+}
+	
+li a {
+	display:block;
+	color:white;
+	text-align:center;
+	padding:15px 18px;
+	text-decoration:none;
+}
+	
+li a:hover {
+	background-color:#aad1e3;
+}
+	
+li a:visited {
+	background-color:#8ECDDD;
+}	
+/*header*/
+h1 {
+	color:black;
+	font-family: 'Roboto Serif', serif;
+	text-align:center;
+}
+
+/* contact us Information */
+.contact-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Roboto Serif', serif;
+}
+
+.box {
+    width: 30%;
+    margin: 10px;
+    border: 0px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.box img {
+    max-width:100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.box h3,p {
+    font-family: 'Roboto Serif', serif;   
+}
+	
+/* Form */	
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: 'Roboto Serif', serif;
+  margin: auto; 
+  max-width: 400px; 
+  background-color: #f0f8fa;
+}
+
+/* Label */
+label {
+  font-weight: bold;
+  font-family: 'Roboto Serif', serif;
+  font-size: 25px;
+}
+
+/* Input and textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="text"],
+input[type="message"],
+textarea {
+  width: 95%; 
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Roboto Serif', serif;
+  text-align: center;
+}
+
+/* Submit button */
+input[type="submit"] {
+  background-color: #FFCC70;
+  color: black;
+  border: 2px solid #70AFFF; 
+  padding: 20px;
+  width: 50%; 
+  border-radius: 10px;
+  font-family: 'Roboto Serif', serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+h4 {
+	font-family: 'Roboto Serif', serif;
+	font-size: 35px;
+	color: black;
+	display: block;
+	text-align: center;
+}
+
+.footer {
+	background-color:#FFE3A7;
+	text-align: center;
+	color:black;
+	width:auto;
+	padding: 20px 0;
+	font-family: 'Roboto Serif', serif;
+}
+	
